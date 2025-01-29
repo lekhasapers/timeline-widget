@@ -15,8 +15,8 @@
     .timeline-container {
       max-width: 900px;
       margin: 50px auto;
-      padding: 20px;
       position: relative;
+      padding: 20px 0;
     }
 
     /* Vertical Line */
@@ -35,11 +35,11 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin: 50px 0;
+      margin: 40px 0;
       position: relative;
     }
 
-    /* Circle on the Line */
+    /* Circles on the Line */
     .timeline-item::before {
       content: '';
       position: absolute;
@@ -54,17 +54,16 @@
       z-index: 1;
     }
 
-    /* Content Box Styling */
     .timeline-item-content {
       background-color: #ffffff;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      width: 40%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
       position: relative;
     }
 
-    /* Alternate Alignment */
+    /* Alternate Positioning */
     .timeline-item-left {
       flex-direction: row-reverse;
     }
@@ -77,7 +76,7 @@
       text-align: left;
     }
 
-    /* Headers, Titles, and Text Styles */
+    /* Header and Text Styles */
     .timeline-item-content h4 {
       font-size: 16px;
       font-weight: bold;
@@ -120,12 +119,6 @@
       .timeline-item::before {
         left: 20px;
       }
-    }
-
-    /* Extra Spacing for Embedding */
-    iframe {
-      margin: 20px auto;
-      display: block;
     }
   </style>
 </head>
