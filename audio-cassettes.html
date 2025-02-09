@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Cassette Tapes Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Birth of the Compact Cassette</h4>
+        <h3>1963</h3>
+        <p>Philips introduces the compact cassette—a revolutionary, pocket-sized audio format designed to democratize music recording. Little did they know, this humble invention would soon fuel the early days of digital data storage.</p>
+      </div>
+    </div>
+
+ 
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Cassette Breakthrough in Computing</h4>
+        <h3>Early 1970s</h3>
+        <p>Innovators discover that by encoding binary data as a series of audio tones (using techniques like frequency shift keying), cassette tapes can be repurposed to store computer programs and data—a true marriage of analog charm and digital ingenuity.</p>
+      </div>
+    </div>
+
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Early Microcomputer Adoption</h4>
+        <h3>Early to Mid 1970s</h3>
+        <p>Pioneering microcomputers such as the TRS-80 and Commodore PET embrace cassette-based storage. These cost-effective systems empower hobbyists and educators alike, bringing computing into homes and classrooms with a quirky, cassette-driven twist.</p>
+      </div>
+    </div>
+
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Golden Age of Cassette Loading</h4>
+        <h3>Early 1980s</h3>
+        <p>The era when the distinctive beeps, hisses, and rhythmic clicks of cassette loading become the soundtrack of computing. Iconic machines like the Sinclair ZX Spectrum and the Commodore 64 turned the act of data loading into a cultural experience.</p>
+      </div>
+    </div>
+
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>The Commodore Datasette</h4>
+        <h3>Early 1980s</h3>
+        <p>Commodore launches the Datasette—a specialized cassette interface that enhances reliability and ease-of-use. This device becomes synonymous with home computing, as users fondly recall its unique “soundtrack” of data being loaded and saved.</p>
+      </div>
+    </div>
+
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Challenges and Limitations</h4>
+        <h3>Mid 1980s</h3>
+        <p>Despite its nostalgic charm, cassette data storage is hampered by slow speeds and error-prone transfers. These limitations spark the search for faster, more reliable alternatives, even as cassette-based systems win hearts worldwide.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Rise of Floppy Disks</h4>
+        <h3>Mid to Late 1980s</h3>
+        <p>Floppy disks, with their rapid access times and enhanced reliability, begin to eclipse cassette tapes as the primary data storage medium. The cassette era gracefully bows out, leaving behind a legacy rich in innovation and fond memories.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Retro Revival and Nostalgia</h4>
+        <h3>2000s–Present</h3>
+        <p>Today, retro computing enthusiasts and collectors celebrate the legacy of cassette data storage. Whether it’s restoring vintage hardware or reliving the unmistakable loading sounds, the audio cassette remains a beloved symbol of computing’s creative and resourceful past.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
