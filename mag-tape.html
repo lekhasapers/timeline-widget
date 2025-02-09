@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBM Magnetic Tape Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Pioneering Innovation</h4>
+        <h3>Early 1950s</h3>
+        <p>IBM introduces the IBM 726 Magnetic Tape Unit alongside the IBM 701, pioneering the use of magnetic tape for data processing and scientific computation.</p>
+      </div>
+    </div>
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Revolutionizing Data Storage</h4>
+        <h3>1950s</h3>
+        <p>Magnetic tape quickly outpaces paper tape by offering higher data density and improved reliability, establishing itself as a cornerstone in early mainframe computing.</p>
+      </div>
+    </div>
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Advancement with 9-Track Technology</h4>
+        <h3>1960s</h3>
+        <p>IBM upgrades its tape technology from the original 7-track to the 9-track format, significantly increasing storage capacity and incorporating advanced error-checking mechanisms.</p>
+      </div>
+    </div>
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Scaling Up with Automation</h4>
+        <h3>1970s</h3>
+        <p>In response to exploding data volumes, IBM refines its magnetic tape systems by introducing automated tape libraries and compact cartridge designs, streamlining backup and archival operations.</p>
+      </div>
+    </div>
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Transition in Data Storage</h4>
+        <h3>1980s</h3>
+        <p>Even as disk storage becomes dominant, magnetic tape solidifies its role in long-term data archival and backup, thanks to its cost-effectiveness and enduring reliability.</p>
+      </div>
+    </div>
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Modern Tape Systems</h4>
+        <h3>2000s–Present</h3>
+        <p>IBM magnetic tape technology endures in state-of-the-art systems like the IBM 3592 series, offering robust, energy-efficient, and scalable solutions for enterprise-level archival needs.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
