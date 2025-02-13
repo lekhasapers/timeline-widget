@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compact Discs Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+  
+    <!-- Origins and Collaborative Research -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Origins and Collaborative Research</h4>
+        <h3>Late 1970s</h3>
+        <p>
+          In the late 1970s, Philips and Sony embarked on a joint research project to develop an optical digital audio medium. Their work focused on overcoming the limitations of analog audio formats by employing laser-based technology and robust error-correction methods. This collaboration laid the technical and industrial groundwork for the compact disc, establishing the basic principles of data encoding using microscopic pits and lands.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Standardization and Early Prototypes -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Standardization and Early Prototypes</h4>
+        <h3>1980–1981</h3>
+        <p>
+          By 1980, Philips and Sony had formalized the design specifications for the compact disc. The standardized format defined a disc 120 mm in diameter, capable of storing approximately 74 minutes of audio—later extended to 80 minutes. Early prototypes were developed to validate the encoding scheme and ensure compatibility across various playback devices, establishing a reliable platform for mass production.
+        </p>
+      </div>
+    </div>
+    
+    <!-- First Commercial CD Release -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>First Commercial CD Release</h4>
+        <h3>October 1, 1982</h3>
+        <p>
+          On October 1, 1982, the first commercial compact discs were released in Japan. This landmark event marked the debut of the CD as a viable medium for high-fidelity audio reproduction. Record companies quickly embraced the technology for its clarity, durability, and resistance to wear, which offered a distinct advantage over vinyl and cassette formats.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Adaptation for Data Storage: The Emergence of CD-ROM -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Adaptation for Data Storage: CD-ROM</h4>
+        <h3>Mid‑1980s</h3>
+        <p>
+          Building on its success in audio, the compact disc was adapted for computer data storage in the mid‑1980s with the advent of the CD-ROM. With capacities typically ranging from 650 to 700 MB, CD-ROMs provided a significant leap over floppy disks, enabling the distribution of complex software, multimedia applications, and educational content on a single disc.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Development of Recordable and Rewritable Formats -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Development of Recordable and Rewritable Formats</h4>
+        <h3>Late 1980s – Early 1990s</h3>
+        <p>
+          In the late 1980s and early 1990s, recordable (CD-R) and rewritable (CD-RW) formats were introduced, expanding the utility of compact discs beyond mass production. CD-R technology allowed for one-time recording of data or audio, making it popular for personal backups and music recording, while CD-RW offered the capability to erase and re-record data multiple times, thus finding applications in both professional and consumer settings.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Notable Implementation: Windows 95 on CD-ROM -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Notable Implementation: Windows 95 on CD-ROM</h4>
+        <h3>1995</h3>
+        <p>
+          A defining moment in the evolution of optical media was the release of Windows 95, which was distributed primarily on CD-ROM. This event showcased the compact disc’s capacity to handle large-scale software distribution and multimedia content. The inclusion of advanced graphics, sound, and interactive features on a single disc not only enhanced the user experience but also accelerated the widespread adoption of CD-ROM drives in personal computers.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Decline in Consumer Markets -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Decline in Consumer Markets</h4>
+        <h3>Early 2000s</h3>
+        <p>
+          With the emergence of DVDs, USB flash drives, and digital streaming, the use of compact discs in consumer markets began to decline in the early 2000s. The limitations in storage capacity and the increasing demand for higher-quality media and more convenient distribution channels led to a gradual shift away from CDs, although they continued to serve niche roles in specific applications.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Legacy and Continued Use -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Legacy and Continued Use in Archival Storage</h4>
+        <h3>2000s–Present</h3>
+        <p>
+          Despite declining prominence in mainstream consumer markets, the compact disc remains an important technology for archival storage and legacy applications. Its robustness, standardized format, and widespread historical adoption continue to make it a subject of study in the evolution of digital media, and it remains a cultural icon of the digital revolution.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
