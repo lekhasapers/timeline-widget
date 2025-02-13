@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floppy Disks Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+
+    <!-- Development of the 8-Inch Floppy Disk -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Development of the 8‑Inch Floppy Disk</h4>
+        <h3>Early 1970s</h3>
+        <p>
+          The 8‑inch floppy disk was developed by IBM in the late 1960s and introduced in the early 1970s as the first practical removable magnetic storage medium. With storage capacities ranging from approximately 80 KB to 1 MB, this format was predominantly used in mainframe and minicomputer systems, facilitating efficient data exchange and system backups.
+        </p>
+      </div>
+    </div>
+
+    <!-- Emergence of the 5.25-Inch Floppy Disk -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Emergence of the 5.25‑Inch Floppy Disk</h4>
+        <h3>Mid‑1970s</h3>
+        <p>
+          In response to the growing demand for a more compact storage solution in personal computing, the 5.25‑inch floppy disk was introduced in the mid‑1970s. Developed by companies such as Shugart Associates, this format initially provided capacities around 360 KB, later increasing to approximately 1.2 MB, and became integral to early personal computers including the Apple II, Commodore 64, and IBM PC.
+        </p>
+      </div>
+    </div>
+
+    <!-- Introduction of the 3.5-Inch Floppy Disk -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Introduction of the 3.5‑Inch Floppy Disk</h4>
+        <h3>1984</h3>
+        <p>
+          Sony introduced the 3.5‑inch floppy disk in 1984, featuring a rigid plastic enclosure that significantly improved durability and protection of the magnetic media. Initially available with a 720 KB capacity, this format was soon standardized to 1.44 MB, and it rapidly became the predominant medium for personal computing due to its enhanced reliability and higher storage density.
+        </p>
+      </div>
+    </div>
+
+    <!-- Period of Dominance of the 3.5-Inch Format -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Period of Dominance of the 3.5‑Inch Format</h4>
+        <h3>Late 1980s - 1990s</h3>
+        <p>
+          Throughout the late 1980s and 1990s, the 3.5‑inch floppy disk became the standard storage medium in personal computing. Its robust design, standardized capacity of 1.44 MB, and compatibility across numerous platforms made it indispensable for operating system booting, software distribution, and data storage.
+        </p>
+      </div>
+    </div>
+
+    <!-- Decline of the Floppy Disk -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Decline of the Floppy Disk</h4>
+        <h3>Early 2000s</h3>
+        <p>
+          The early 2000s saw the gradual obsolescence of floppy disks as newer storage technologies such as USB flash drives, optical media, and cloud storage emerged. The inherent limitations in capacity and data transfer speeds rendered floppy disks unsuitable for modern computing needs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Legacy and Preservation -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Legacy and Preservation</h4>
+        <h3>2000s–Present</h3>
+        <p>
+          Although no longer used as a primary storage medium, floppy disks are preserved as historically significant artifacts in the evolution of digital storage. They continue to be studied by scholars and collected by retro computing enthusiasts, symbolizing a pivotal era in the development of personal computing.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
