@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Drives Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+  
+    <!-- Introduction of the Zip Drive -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Introduction of the Zip Drive</h4>
+        <h3>November 1994</h3>
+        <p>
+          In November 1994, Iomega introduced the Zip drive, a groundbreaking removable storage system that offered a 100 MB capacity. This capacity was nearly 70 times greater than that of a standard 1.44 MB floppy disk, addressing the growing need for higher-capacity and more reliable data storage. The initial design featured a rigid cartridge that helped protect the disk and allowed for faster data access.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Notable Implementation: COMDEX 1994 Debut -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Notable Implementation: COMDEX 1994 Debut</h4>
+        <h3>November 1994</h3>
+        <p>
+          At COMDEX 1994 in Las Vegas, Iomega publicly demonstrated the capabilities of the Zip drive. This high-profile event highlighted the drive’s substantial 100 MB storage capacity and superior performance compared to floppy disks. The presentation at COMDEX was pivotal, garnering significant attention from industry professionals and consumers alike, and it set the stage for widespread market adoption.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Capacity Upgrades and Technological Evolution -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Capacity Upgrades and Technological Evolution</h4>
+        <h3>1996–2000</h3>
+        <p>
+          Following its initial success, the Zip drive underwent rapid development during the mid to late 1990s. In 1996, Iomega released an upgraded version that increased the storage capacity to 250 MB. By 2000, further enhancements led to the introduction of the 750 MB Zip drive. These capacity upgrades were driven by increasing data demands and advancements in magnetic storage technology, solidifying the Zip drive's role as a critical tool in both consumer and professional environments.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Notable Implementation: Integration into Small Business Backup Solutions -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Notable Implementation: Integration into Small Business Backup Solutions</h4>
+        <h3>Mid‑1990s to Early 2000s</h3>
+        <p>
+          During its period of peak popularity, Zip drives were widely adopted by small businesses as an integral component of their backup and data management strategies. The combination of high storage capacity, reliability, and cost-effectiveness made the Zip drive an ideal solution for safeguarding critical business data. This widespread adoption in professional settings underscored the drive’s practical benefits and contributed to its long-lasting impact on data storage practices.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Decline in Consumer Markets -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Decline in Consumer Markets</h4>
+        <h3>Early 2000s</h3>
+        <p>
+          By the early 2000s, the introduction of alternative storage technologies such as USB flash drives, recordable CDs, and external hard drives began to erode the market share of Zip drives. These newer technologies offered greater storage capacities, faster data transfer speeds, and more compact form factors, leading to a gradual decline in the use of Zip drives in consumer markets.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Legacy and Continued Influence -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Legacy and Continued Influence</h4>
+        <h3>2000s–Present</h3>
+        <p>
+          Although Zip drives are no longer dominant in the consumer market, their impact on the evolution of removable storage remains significant. The innovations introduced by the Zip drive—particularly the dramatic increase in storage capacity over traditional floppy disks—helped bridge the gap to modern external storage solutions. Its legacy continues in the design principles of contemporary backup systems and serves as a benchmark for the rapid evolution of digital storage technology.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
