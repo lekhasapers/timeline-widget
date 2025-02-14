@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirt Pocket Ventures</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    h1 {
+      text-align: center;
+      color: #6c63ff;
+      margin-top: 40px;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+    <div class="timeline-container">
+      
+      <!-- Precursor and Initial Challenges -->
+      <div class="timeline-item timeline-item-left">
+        <div class="timeline-item-content">
+          <h4>Early Challenges in Portability</h4>
+          <h3>Pre-1976</h3>
+          <p>
+            Before the development of the 5.25" disk drive, portable computers were virtually nonexistent. The lack of a standard size for removable storage posed a significant challenge to the emerging field of mobile computing.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Debates on Portable Diskette Size -->
+      <div class="timeline-item timeline-item-right">
+        <div class="timeline-item-content">
+          <h4>Debate over "Shirt Pocket" Diskette Sizes</h4>
+          <h3>Early to Mid-1970s</h3>
+          <p>
+            As computer systems matured, industry experts and journalists debated which diskette size would be best suited for portable computing. Notably, computer manufacturer George Morrow suggested that the industry work with the clothing sector to design shirt pockets around a 5.25" format, highlighting the need for a truly portable storage medium.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Dysan’s 3.25" Diskette Initiative -->
+      <div class="timeline-item timeline-item-left">
+        <div class="timeline-item-content">
+          <h4>Dysan’s 3.25" Diskette Initiative</h4>
+          <h3>Mid-1970s to Early 1980s</h3>
+          <p>
+            To address the market’s demand for portability without the extensive retooling required by 3" or 3.5" formats, Dysan introduced the 3.25" diskette. This design was a scaled-down version of the 5.25" diskette and was produced with minimal changes to existing manufacturing processes.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Strategic Software Publishing Venture -->
+      <div class="timeline-item timeline-item-right">
+        <div class="timeline-item-content">
+          <h4>Software Publishing to Promote the 3.25" Format</h4>
+          <h3>Late 1970s to Early 1980s</h3>
+          <p>
+            In an effort to establish the 3.25" diskette as the standard for portable storage, Dysan initiated a software publishing business. By securing distribution deals with major software companies, Dysan ensured that key software titles were available on 3.25" media. Although this strategy briefly gave the 3.25" format some market traction, it ultimately failed to achieve widespread adoption.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Market Consolidation around 3.5" Diskettes -->
+      <div class="timeline-item timeline-item-left">
+        <div class="timeline-item-content">
+          <h4>Market Consolidation around the 3.5" Standard</h4>
+          <h3>Late 1970s to Early 1980s</h3>
+          <p>
+            Despite significant production of 3.25" diskettes and drives (e.g., the rare Seequa Chameleon 325), the market eventually consolidated around the 3.5" format. Major players such as Hewlett Packard, Apple, and IBM adopted the 3.5" diskette as the industry standard, demonstrating that factors like market inertia and strategic alliances often outweighed technical superiority.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  </html>

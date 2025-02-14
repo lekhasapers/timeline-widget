@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dysan </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    h1 {
+      text-align: center;
+      color: #6c63ff;
+      margin-top: 40px;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dysan Timeline -->
+
+  <div class="timeline-container">
+  
+    <!-- Formation and Early Development -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Formation of Dysan</h4>
+        <h3>1973</h3>
+        <p>
+          Dysan was founded in 1973 in San Jose, California by C. Norman Dion. From its inception, Dysan set out to become a leader in storage media manufacturing.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Development of the 5.25" Floppy Disk -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Development of the 5.25" Floppy Disk</h4>
+        <h3>1976</h3>
+        <p>
+          Dysan played an instrumental role in developing the 5.25" floppy disk, a format that revolutionized removable storage by providing a practical balance of capacity and portability.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Peak and Corporate Recognition -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Corporate Success and Recognition</h4>
+        <h3>1983</h3>
+        <p>
+          By 1983, Dysan had become a Fortune 500 company with over 1,200 employees and was ranked among the top ten private sector employers in Silicon Valley. Their Santa Clara facilities, known for innovative architectural features like expansive glass atriums and indoor landscaping, underscored the company's prominence.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Change in Ownership -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Sale to Xidex Magnetics</h4>
+        <h3>Spring 1984</h3>
+        <p>
+          In the spring of 1984, Norman Dion sold Dysan to Xidex Magnetics, marking the beginning of a period of significant corporate change.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Decline and Bankruptcy -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Bankruptcy and Decline</h4>
+        <h3>1997</h3>
+        <p>
+          Under the direction of Jerry Ticerelli, Dysan declared bankruptcy in 1997, signaling a downturn in the company’s fortunes in a rapidly evolving industry.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Brief Reopening and Final Closure -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Reopening and Final Closure</h4>
+        <h3>2003</h3>
+        <p>
+          After a brief reopening in 2003, Dysan closed permanently just six months later under the leadership of Dylan Campbell, marking the end of an era for the pioneering manufacturer.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  </body>
+  </html>
