@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Memory Cards Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    
+    <!-- Precursor: Introduction of MMC -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Precursor: Introduction of MMC</h4>
+        <h3>1997</h3>
+        <p>
+          In 1997, the MultiMediaCard (MMC) was introduced as a compact flash memory solution for portable electronics. Though not an SD card itself, the MMC laid the groundwork for the evolution of flash memory storage by demonstrating the potential for small, non-volatile storage in consumer devices.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Founding of the SD Association -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Founding of the SD Association</h4>
+        <h3>2000</h3>
+        <p>
+          In 2000, leading companies including SanDisk, Panasonic, and Toshiba established the SD Association. This consortium standardized the Secure Digital (SD) format, ensuring interoperability among devices and providing a unified specification that accelerated the adoption of SD cards in consumer electronics.
+        </p>
+      </div>
+    </div>
+    
+    <!-- First SD Cards Released -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Release of the First SD Cards</h4>
+        <h3>2000</h3>
+        <p>
+          Also in 2000, following the establishment of the standard, the first SD cards were released. These early cards supported capacities of up to 2 GB and were primarily used in digital cameras and portable devices, marking a significant improvement over previous storage media in terms of capacity, reliability, and ease of use.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Introduction of the microSD Card -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Introduction of the microSD Card</h4>
+        <h3>2005</h3>
+        <p>
+          In 2005, the microSD card was introduced as a smaller form factor of the standard SD card. Retaining the performance and reliability of its larger counterpart, the microSD quickly became integral to the design of mobile phones, MP3 players, and other portable electronics, spurring rapid growth in mobile computing.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Ratification of the SDHC Standard -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Ratification of the SDHC Standard</h4>
+        <h3>2006</h3>
+        <p>
+          In 2006, the SD Association ratified the SDHC (Secure Digital High Capacity) standard, expanding the maximum capacity of SD cards from 2 GB to 32 GB and introducing the FAT32 file system. This standard enabled devices to capture higher-resolution images and record longer videos, addressing the increasing demands of digital photography and multimedia applications.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Ratification of the SDXC Standard -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Ratification of the SDXC Standard</h4>
+        <h3>2009</h3>
+        <p>
+          The SDXC (Secure Digital eXtended Capacity) standard was introduced in 2009, further extending the maximum storage capacity up to 2 TB and incorporating support for the exFAT file system. This development catered to high-end professional applications and advanced consumer devices, cementing the SD card's role as a versatile and scalable storage solution.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
