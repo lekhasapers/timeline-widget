@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaz Drives Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    
+    <!-- Introduction of the Jaz Drive -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Introduction of the Jaz Drive</h4>
+        <h3>1995</h3>
+        <p>
+          In 1995, Iomega launched the Jaz drive as a breakthrough in removable storage technology. The drive offered an unprecedented 1 GB capacity in a compact, rigid cartridge, dramatically surpassing the storage limits of both floppy disks and Zip drives. This development was a direct response to the burgeoning demands for higher capacity and reliability in personal computing and small business environments.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Capacity Upgrades and Technological Evolution -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Capacity Upgrades and Technological Evolution</h4>
+        <h3>1996–2000</h3>
+        <p>
+          Between 1996 and 2000, Iomega introduced several iterations of the Jaz drive that incorporated significant technological advancements. Upgraded models increased the storage capacity from the initial 1 GB to 2 GB, while also improving data transfer speeds and error correction mechanisms. These enhancements were driven by the escalating needs of digital content and were essential in maintaining the Jaz drive’s competitive edge in the rapidly evolving market for removable storage.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Integration into Enterprise Backup Solutions -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Integration into Enterprise Backup Solutions</h4>
+        <h3>Late 1990s – Early 2000s</h3>
+        <p>
+          As businesses faced increasing volumes of data, the Jaz drive found a new role beyond personal computing. In the late 1990s and early 2000s, it was widely adopted by small and medium-sized enterprises for backup and archival purposes. Its high capacity and reliability made it an ideal solution for safeguarding critical data, and its ease of integration into existing systems helped cement its reputation as a dependable removable storage medium.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Decline and Legacy -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Decline and Legacy</h4>
+        <h3>Early 2000s – Present</h3>
+        <p>
+          With the advent of newer storage technologies such as USB flash drives and external hard drives, the Jaz drive gradually lost its prominence in the consumer market during the early 2000s. Despite its decline, the Jaz drive is remembered as a pivotal innovation that bridged the gap between low-capacity floppy disks and modern high-capacity removable storage solutions. Its technical contributions and design innovations continue to influence data backup and archival strategies today.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
