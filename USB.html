@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USB Flash Drives Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 50px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    
+    <!-- Introduction of the USB Flash Drive -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Introduction of the USB Flash Drive</h4>
+        <h3>2000</h3>
+        <p>
+          In 2000, the first USB flash drives were introduced, marking a pivotal moment in portable data storage. Developed by companies such as M-Systems (with their DiskOnKey product), these devices leveraged advances in flash memory and the universal USB interface to offer a compact, solid-state storage solution. Early models typically offered capacities in the range of 8 MB to 64 MB, representing a dramatic improvement over legacy removable media.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Adoption of USB 2.0 Standard -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Adoption of USB 2.0 Standard</h4>
+        <h3>April 2000</h3>
+        <p>
+          In April 2000, the USB 2.0 specification was released, increasing data transfer rates from 12 Mbps to 480 Mbps. This significant upgrade enabled USB flash drives to perform faster data transfers, thus accelerating their adoption across both consumer and enterprise markets. The enhanced speed and improved performance of USB 2.0 solidified the role of flash drives as a mainstream storage medium.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Rapid Capacity Expansion and Market Penetration -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Rapid Capacity Expansion and Market Penetration</h4>
+        <h3>2001–2005</h3>
+        <p>
+          Between 2001 and 2005, USB flash drives underwent rapid technological advancements that led to a steady increase in storage capacities. Manufacturers began to offer devices with capacities of 128 MB, 256 MB, and later 512 MB and 1 GB. This period witnessed a dramatic shift in the digital storage landscape, as USB flash drives replaced floppy disks and optical media for many data storage and transfer applications due to their superior capacity, durability, and convenience.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Integration into Consumer Electronics -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Integration into Consumer Electronics</h4>
+        <h3>2006–2010</h3>
+        <p>
+          From 2006 to 2010, USB flash drives became ubiquitous across a wide range of consumer electronics. Their small size and high capacity made them the preferred storage medium for laptops, desktop computers, digital cameras, and media players. This integration was a key factor in the rapid adoption of portable storage solutions, enabling users to conveniently transfer and back up data across various devices.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Modern Era: High Capacities and Continued Relevance -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Modern Era: High Capacities and Continued Relevance</h4>
+        <h3>2010–Present</h3>
+        <p>
+          In the modern era, USB flash drives have continued to evolve in response to growing storage demands and advances in flash memory technology. Today, they are available in capacities ranging from 16 GB to 1 TB or more, and they support faster transfer protocols such as USB 3.0 and USB 3.1. Despite the rise of cloud storage, USB flash drives remain a popular and reliable solution for portable data storage, with ongoing innovations ensuring their continued relevance in a diverse range of applications.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
