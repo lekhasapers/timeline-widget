@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSD Drives Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Early Research and Conceptual Foundations</h4>
+        <h3>Early 1970s</h3>
+        <p>
+          Research into semiconductor memory and non-volatile storage began in the early 1970s. Scientists explored methods to electronically store data without relying on mechanical parts. This period laid the foundational concepts that would eventually lead to the development of solid-state drives (SSDs).
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Invention of NAND Flash Memory</h4>
+        <h3>1987</h3>
+        <p>
+          A pivotal advancement occurred in 1987 when Toshiba introduced NAND flash memory. This breakthrough provided a compact, rewritable, and non-volatile memory solution, establishing the technological basis for modern SSDs by enabling high storage densities at a lower cost per megabyte.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Emergence of Early Commercial SSDs</h4>
+        <h3>Early 1990s</h3>
+        <p>
+          Building on the advancements in NAND flash, early commercial SSDs were introduced in the early 1990s. Initially deployed in specialized and high-end applications, these first-generation SSDs demonstrated the potential of solid-state storage despite their high cost and limited capacity compared to later models.
+        </p>
+      </div>
+    </div>
+    
+  
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Widespread Adoption and Mainstream Integration</h4>
+        <h3>2000–2010</h3>
+        <p>
+          The early 2000s marked a turning point as advancements in flash memory manufacturing and the introduction of the USB and SATA interfaces drove down costs and increased capacities. SSDs began replacing traditional hard disk drives in laptops and desktops, particularly in applications where speed, durability, and low power consumption were critical. This period saw SSDs transition from niche products to mainstream storage solutions.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Notable Implementation: Apple's MacBook Air</h4>
+        <h3>2008</h3>
+        <p>
+          A landmark event in SSD adoption was the introduction of the Apple MacBook Air in 2008, which offered SSD options as a standard configuration. This move underscored the advantages of SSDs in terms of speed, reliability, and compactness, and helped drive the widespread acceptance of SSD technology in consumer and professional markets.
+        </p>
+      </div>
+    </div>
+    
+   
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Modern Advancements: NVMe and PCIe Integration</h4>
+        <h3>2010–Present</h3>
+        <p>
+          Since 2010, the evolution of SSD technology has accelerated with the adoption of NVMe and PCIe interfaces, which have dramatically increased data transfer speeds and reduced latency. These advancements have solidified the role of SSDs in high-performance computing, gaming, and enterprise data centers, and they continue to push the boundaries of storage capacity and efficiency.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

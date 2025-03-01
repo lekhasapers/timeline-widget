@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bernoulli Box Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    /* Vertical Line */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+    /* Left and Right Content Placement */
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+    /* Circle on the Line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+    /* Header and Text Styles */
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    
+    <!-- Early Research and Development -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Early Research and Development</h4>
+        <h3>Late 1980s</h3>
+        <p>
+          During the late 1980s, researchers began investigating removable hard disk technologies that would eventually lead to the development of the Bernoulli Box. The focus was on leveraging established magnetic storage principles in a removable cartridge format, promising improved capacity and reliability without the need for moving parts.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Commercial Introduction of the Bernoulli Box -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Commercial Introduction of the Bernoulli Box</h4>
+        <h3>Circa 1991</h3>
+        <p>
+          Iomega introduced the Bernoulli Box in the early 1990s (circa 1991) as a high-capacity removable storage system. Designed as an alternative to existing technologies, the Bernoulli Box offered a removable hard disk solution intended for both personal computing and enterprise data backup.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Market Adoption and Enterprise Use -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Market Adoption and Enterprise Use</h4>
+        <h3>Mid-1990s</h3>
+        <p>
+          By the mid-1990s, the Bernoulli Box gained traction among enterprise users, thanks to its higher capacity and robust performance compared to earlier removable storage options. It became a popular choice for backup and archival applications in environments where data integrity and reliability were critical.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Notable Trade Show Demonstration -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Notable Trade Show Demonstration</h4>
+        <h3>1994</h3>
+        <p>
+          In 1994, at a major industry trade show, Iomega demonstrated the Bernoulli Box’s capabilities to a wide audience of technology professionals. The demonstration highlighted the system’s ability to manage large volumes of data, significantly boosting its profile and cementing its reputation as a viable enterprise storage solution.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Decline and Discontinuation -->
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Decline and Discontinuation</h4>
+        <h3>Early 2000s</h3>
+        <p>
+          With the advent of newer, more cost-effective removable storage technologies—such as the Zip drive, USB flash drives, and external hard disks—the Bernoulli Box gradually lost its market share. By the early 2000s, it was largely discontinued as enterprises and consumers shifted towards more advanced storage solutions.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Legacy and Historical Impact -->
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Legacy and Historical Impact</h4>
+        <h3>2000s–Present</h3>
+        <p>
+          Although the Bernoulli Box is no longer in production, its development marked a significant milestone in the evolution of removable storage. The technology influenced subsequent advances in external hard drive design and remains an important part of the historical narrative of digital storage innovation.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

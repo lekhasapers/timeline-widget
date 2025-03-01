@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Memory Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+  
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+  
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Discovery of Magnetic Bubbles</h4>
+        <h3>Late 1960s</h3>
+        <p>
+          In the late 1960s, researchers first observed stable, microscopic magnetic domains—referred to as "bubbles"—in thin films of magnetic garnet. This observation laid the theoretical groundwork for bubble memory by demonstrating that small, stable magnetic regions could be created and manipulated for data storage.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Early Prototypes and Demonstrations</h4>
+        <h3>Early 1970s</h3>
+        <p>
+          Building on these discoveries, research institutions such as Bell Labs developed the first experimental prototypes of bubble memory. In the early 1970s, these prototypes successfully demonstrated the ability to generate, move, and detect magnetic bubbles using controlled magnetic fields, showcasing the technology's potential as a non-volatile, solid-state memory solution.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Advances in Research and Specialized Applications</h4>
+        <h3>Early 1980s</h3>
+        <p>
+          By the early 1980s, bubble memory had attracted significant interest, particularly for use in environments where its unique advantages were critical. Specialized applications in aerospace and military systems began to emerge, as these sectors valued bubble memory for its reliability under harsh conditions.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Competition from Semiconductor Memory</h4>
+        <h3>Mid 1980s</h3>
+        <p>
+          During the mid-1980s, rapid advancements in semiconductor memory technologies, including high-density DRAM and flash memory, began to challenge the viability of bubble memory. These technologies offered higher data densities and lower production costs, which gradually reduced the commercial appeal of bubble memory systems.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Decline and Obsolescence</h4>
+        <h3>Early 1990s</h3>
+        <p>
+          By the early 1990s, bubble memory had largely been supplanted by semiconductor-based storage solutions. While bubble memory never achieved widespread commercial success, its pioneering technology influenced subsequent developments in non-volatile storage. Today, bubble memory is primarily regarded as an important milestone in the evolution of digital storage technology.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

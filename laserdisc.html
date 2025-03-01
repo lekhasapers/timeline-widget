@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaserDisc Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5fa;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+    }
+   
+    .timeline-item-left {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .timeline-item-right {
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #6c63ff;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .timeline-item-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-item-left .timeline-item-content {
+      text-align: right;
+    }
+    .timeline-item-right .timeline-item-content {
+      text-align: left;
+    }
+
+    .timeline-item-content h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 5px;
+    }
+    .timeline-item-content h3 {
+      font-size: 18px;
+      color: #6c63ff;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .timeline-item-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+      }
+      .timeline-item-left,
+      .timeline-item-right {
+        padding: 0;
+      }
+      .timeline-item-left .timeline-item-content,
+      .timeline-item-right .timeline-item-content {
+        width: 90%;
+        text-align: left;
+      }
+      .timeline-item::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Early Research and Theoretical Foundations</h4>
+        <h3>Late 1960s – Early 1970s</h3>
+        <p>
+          Research into optical storage and laser technology during the late 1960s laid the groundwork for LaserDisc technology. Scientists discovered that lasers could read data encoded as microscopic pits and lands on an optical disc, establishing the fundamental principles that would later be applied in analog video storage.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Development and Prototype Demonstrations</h4>
+        <h3>Early to Mid-1970s</h3>
+        <p>
+          Throughout the early 1970s, research institutions and technology companies began developing prototypes of optical disc systems. Early demonstrations showed that using lasers to read analog video information from large, disc-shaped media was both feasible and promising for high-quality video reproduction.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Introduction of the LaserDisc</h4>
+        <h3>1978</h3>
+        <p>
+          In 1978, the first LaserDisc system, also known as DiscoVision in Japan, was introduced by MCA. This innovation marked the debut of an optical video storage medium capable of delivering superior video and audio quality compared to analog tape formats.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Commercial Launch and International Adoption</h4>
+        <h3>1979–1980</h3>
+        <p>
+          Following its initial introduction, LaserDisc technology was rapidly commercialized. By 1979 and into 1980, LaserDiscs gained traction in Japan and Europe, where they were embraced by cinephiles and early adopters for their superior image and sound quality. Although their adoption in the United States was slower, LaserDiscs became a significant medium for high-end home video and educational applications.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Peak Usage and Niche Applications</h4>
+        <h3>1980s</h3>
+        <p>
+          Throughout the 1980s, LaserDiscs enjoyed a period of peak usage among film enthusiasts, educational institutions, and professional video producers. Their large size (typically 12 inches in diameter) allowed for exceptional video and audio fidelity, making them the preferred format for archival and high-quality video playback in specialized markets.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-right">
+      <div class="timeline-item-content">
+        <h4>Competition from Digital Technologies and Decline</h4>
+        <h3>Early 1990s – Early 2000s</h3>
+        <p>
+          As digital optical technologies advanced, the emergence of DVDs and later Blu-ray discs offered greater storage capacity, improved durability, and more convenient production costs. This technological shift led to a gradual decline in the use of LaserDiscs in mainstream home video markets, relegating them to niche applications and collector’s items by the early 2000s.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="timeline-item timeline-item-left">
+      <div class="timeline-item-content">
+        <h4>Legacy and Collector's Market</h4>
+        <h3>2000s–Present</h3>
+        <p>
+          Although no longer a dominant commercial format, LaserDiscs remain an important part of video and media history. Today, they are primarily appreciated by collectors and enthusiasts for their analog charm and the high-quality video experience they once offered. The technology’s legacy continues to influence the development of modern optical storage media.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
